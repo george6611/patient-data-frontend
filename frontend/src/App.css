@@ -1,0 +1,760 @@
+.landingContainer {
+  min-height: 100vh;
+  min-width: 4vh;
+  background-color: aliceblue;
+  padding: 1px;
+}
+.container1 {
+  height: 100vh;
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  z-index: 100;
+}
+
+.inputs {
+  min-width: 30vh;
+  height: 10vh;
+  padding-left: 13px;
+  padding-top: 7px;
+  display: flex;
+}
+.search {
+  min-height: 6vh;
+  padding: 7px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+}
+.demos {
+  height: 77vh;
+  width: 100%;
+  border-radius: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#demo {
+  height: 70vh;
+  width: 30%;
+  background-color: whitesmoke;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.demos:nth-child(2) {
+  transition-delay: 200ms;
+}
+demos:nth-child(3) {
+  transition-delay: 300ms;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+#demo p {
+  color: aliceblue;
+}
+.demo1 {
+  background-image: url("./Images/receptionist1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 2px 15px;
+}
+.demo2 {
+  background-image: url("./Images/entry.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 2px 15px rgb(16, 109, 190);
+}
+.demo3 {
+  background-image: url("./Images/doc.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 2px 15px;
+}
+.container2 {
+  min-height: 50vh;
+}
+.introduction {
+  height: 100%;
+  width: fit-content;
+  margin: 10px;
+  padding: 100px;
+  padding-top: 20px;
+  margin-bottom: 1.9px;
+  border-radius: 0.5cap;
+  display: grid;
+  background-color: #0c7d91;
+  box-shadow: 1px 2px 15px;
+}
+.introduction p {
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.principles {
+  height: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 0.5cap;
+  background-color: #0c7d91;
+}
+
+.principles p {
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: normal;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.principles h4 {
+  width: fit-content;
+  color: rgb(99, 40, 131);
+  position: relative;
+  left: 45%;
+}
+.landingFooter {
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  background-color: #0c7d91;
+  width: fit-content;
+  box-shadow: 1px 2px 15px;
+  margin: 10px;
+  padding: 5px;
+  padding-left: 160px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contact a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.contact a:hover {
+  color: #70ddf0;
+  transition-delay: 200ms;
+}
+.displayPage {
+  height: 100vh;
+  width: 100%;
+  background-color: alicblue;
+}
+.displaySearch {
+  height: 50px;
+  display: flex;
+  justify-content: right;
+}
+#homeButton {
+  position: absolute;
+  left: 4%;
+}
+.displaySearch input {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 5px;
+  border-radius: 5px;
+}
+.table {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 90vh;
+  background-color: #0c7d91;
+}
+.table li{
+ background-color: #0c7d91;
+ color: aliceblue;
+
+}
+.table a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.regContainer {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+.regForm {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 100%;  
+  width: 100%;
+  background-color: #007bff;
+  
+}
+span {
+  font-size: 13px;
+}
+.regForm input {
+  border-radius: 10px;
+  width: 100%;
+  
+}
+
+#password {
+  position:relative;
+  top: -45%;
+  left: 90%; /* Adjust to desired position */
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#confirmPassword{
+  position:relative;
+  top:-45%;
+  left: 90%; /* Adjust to desired position */
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-password::before {
+  content: "👁️";
+  font-size: 16px;
+  color: #aaa; /* Default color for the toggle button */
+}
+
+.toggle-password.active::before {
+  content: "👁️"; /* Change to an eye icon when password is visible */
+  color: #007bff; /* Change color to indicate active state */
+}
+
+
+.loginPage {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 90vh;
+  border: solid black 2px;
+  border-radius: 5cap;
+  background-color: aquamarine;
+}
+.loginForm input {
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+.adminHome {
+  min-height: 125vh;
+  min-width: 1vh;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+.hosDisplay {
+  opacity: 10;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  transition: background-image 10ms;
+  z-index: 1000;
+}
+.hosDescription {
+  min-height: 2vh;
+  padding: 10px;
+  margin-bottom: 10px;
+  /* background-color: aliceblue; */
+}
+.depts {
+  min-height: 3vh;
+  /* background-color: rgb(182, 209, 233); */
+}
+.hosAchievements {
+  min-height: 80vh;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.achieve {
+  height: 25vh;
+  width: calc(33.33% - 20px);
+  background-color: aliceblue;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.hosOfficials {
+  min-height: 100vh;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.official1 {
+  height: 25vh;
+  width: calc(33.33% - 20px);
+  background-color: aliceblue;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 5px,5px,5px, #ff574a;
+}
+.adminHome p {
+  padding-left: 10px;
+}
+
+.footer {
+  height: 10vh;
+  color: black;
+  display: grid;
+  justify-content: center;
+}
+.footer a {
+  color: black;
+}
+
+.footer a:hover {
+  color: red;
+}
+
+.detailsHome {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+   
+}
+.hospitalDetails {
+  margin-top: 7px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 10px;
+  justify-content: center;
+  display: grid;
+  /* background-color: #ff574a; */
+  box-shadow: 5px,5px,5px,yellow;
+}
+.hospitalDetails input {
+  margin: 5px;
+  margin-bottom: 10px;
+  width: 40vh;
+  height: 4vh;
+  border-radius: 5px;
+}
+.hospitalDetails label {
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.branches-section {
+  display: grid;
+}
+.staffHome {
+  min-height: 100vh;
+  background-color: white;
+  margin: 0;
+}
+.staffHome a {
+  color: black;
+  text-decoration: none;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#staffLinks {
+  height: 50px;
+  width: 40vh;
+  display: flex;
+  align-items: center;
+}
+.staffHome a:hover {
+  color: blue;
+  font-size: larger;
+}
+.newEmployeeHome {
+  min-height: 100vh;
+  background-color: white;
+  margin: 0;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.staffInfo {
+  margin-top: 70px;
+  min-width: 50vh;
+  height: 70vh;
+  margin-left: 10px;
+  justify-content: center;
+  display: grid;
+}
+
+.staffList {
+  margin-top: 10px;
+  background-color: white;
+  min-height: 100vh;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.staffList input {
+  margin: 10px;
+  border: 0;
+  border-radius: 3px;
+}
+#list{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span{
+  
+  font-size: large;
+  margin-right: 10px;
+}
+
+.popup{
+  position: fixed;
+  top: 16%;
+  left: 10%;
+  width: 80%;
+  max-width: 600px;
+  height: fit-content;
+  background-color: rgba(0,0,0,0.9);
+  color:aliceblue;
+  padding: 10px;
+  
+}
+.popup input{
+  height: 40px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(107, 93, 93);
+}
+.form{
+ display: grid; 
+ justify-content: center;
+ 
+}
+.employeeRecords {
+  background-color: aliceblue;
+  min-height: 100vh;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.employeeRecords input {
+  margin: 10px;
+  border: 0;
+  border-radius: 3px;
+}
+.employeeRecords a {
+  text-decoration: none;
+  color: black;
+}
+.recordsDisplay {
+  background-color: aliceblue;
+  min-height: 100vh;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.recordsDisplay table {
+  border: solid 2px;
+}
+
+.recordsHome {
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+.recordsBar {
+  height: 10vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: right;
+}
+#recordsBar {
+  justify-content: left;
+}
+.recordsProfile {
+  margin-right: 5px;
+  border-radius: 10%;
+  height: 100%;
+  width: 15vh;
+  background-color: aliceblue;
+  background-image: url("./Images/naruto.jpeg");
+  background-repeat: no-repeat;
+}
+.recordsContainer {
+  margin-top: 5px;
+}
+.recordsInput input {
+  margin: 5px;
+
+  border-radius: 3px;
+}
+.recordsDisplay a {
+  text-decoration: none;
+  color: black;
+}
+.recordsUpdate {
+  background-color: aliceblue;
+  min-height: 100vh;
+  margin: 0;
+}
+.createPatient {
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
+}
+.patient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patientDetails {
+  min-height: 70vh;
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+  
+  
+}
+#patientDetails{
+  width: 50vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.receptionistSearch {
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
+}
+.header {
+  height: 10vh;
+  background-color: aliceblue;
+}
+.medicHome {
+  background-color: aliceblue;
+  min-height: 110vh;
+  margin: 0;
+}
+.medicHeader {
+  height: 10vh;
+  background-color: aliceblue;
+}
+.navbar {
+  min-height: 50px;
+  justify-content: center;
+  margin: 5px;
+  background-color: black;
+  margin: 0;
+  
+}
+.navbar a {
+  color: rgb(0, 0, 0);
+  margin: 5px;
+  color:white;
+  /* margin-left: 30px; */
+  /* margin-right: 10px; */
+  text-decoration: none;
+}
+.navbarScroll {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: rgb(15, 16, 17);
+  position: sticky;
+  margin: 0;
+}
+.navbarScroll a {
+  text-decoration: none;
+  margin: 5px;
+  color: aliceblue;
+}
+.navbar a:hover {
+  color: rgb(13, 16, 189);
+}
+#button {
+  margin-top: 10px;
+  background-color: blueviolet;
+  color: aliceblue;
+  border: 0;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px rgb(138, 43, 186);
+  margin: 5px;
+  height: 40px;
+}
+#button:hover {
+  background-color: aliceblue;
+  color: blueviolet;
+}
+
+
+@media only screen and (max-width: 786px) {
+  .demos {
+    height: 57vh;
+  }
+  #demo {
+    height: 50vh;
+  }
+  
+}
+
+@media only screen and (min-width:786px){
+  .popup{
+    position: fixed;
+    left: 30%;
+    top:10%;
+  }
+   #list{
+    width:60%
+  }
+  .listDisplay{
+    
+    justify-content: center;
+  }
+  #patientDetails{
+    width: 100vh;
+   
+  }
+  #patientDetails input{
+    width: 50vh;
+  }
+  
+}
+
+@media only screen and (max-width: 450px) {
+  .demos {
+    display: grid;
+    place-items: center;
+  }
+  #demo {
+    height: 15vh;
+    width: 50%;
+  }
+  #changeableContainers {
+    display: grid;
+    place-items: center;
+  }
+  #changeableDivs {
+    width: 80%;
+    height: 25vh;
+  }
+}
+.profile {
+  background-color: aliceblue;
+  min-height: 100vh;
+  font-size: larger;
+  font-family: "Lucida Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profileBox {
+  background-color: #ff574a;
+  text-align: center;
+  padding: 40px 90px;
+  color: #fff;
+  position: relative;
+  border-radius: 20px;
+}
+.homeIcon {
+  width: 25px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 40px;
+ 
+}
+.homeIcon a{
+  color:white;
+  
+}
+.settingIcon a{
+   color:white;
+ 
+}
+.settingIcon {
+  width: 25px;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  font-size: 40px;
+ 
+}
+.profilePic {
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  margin-top: 40px;
+}
+.socialMedia img {
+  width: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+.profileButton {
+  background: #fff;
+  color: #999;
+  padding: 60px 0;
+  margin-right: -90px;
+  margin-left: -90px;
+  margin-bottom: -40px;
+  border-radius: 20px;
+  margin-top: -10px;
+}
+.profileBox button {
+  background-color: white;
+  color: #ff574a;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(244, 67, 54, 0.5);
+  padding: 15px 60px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: -50px;
+  font-weight: 600;
+  font-size: 16px;
+}
